@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component-library-portfolio</title>
+    <link rel="stylesheet" href="./styles-for-component.css">
 </head>
 
 <body>
@@ -24,13 +25,17 @@
 
     <h3>fluid container</h3>
 
-    <div>it extends upto full width of the page. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odio
-        tenetur eos assumenda laudantium? Unde cupiditate magni sint sunt officia!</div>
+    <div class="container">it extends upto full width of the page. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Quas odio
+        tenetur eos assumenda laudantium? Unde cupiditate magni sint sunt officia!. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Maiores, dicta! Cum, corporis repellendus! Neque velit, sunt placeat natus iste
+        ratione, iure enim voluptate alias beatae temporibus a dignissimos, impedit veritatis!</div>
 
 
     <h3>center container</h3>
 
-    <div>it will be fixed width and in center of the page. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+    <div class="container container-center">it will be fixed width and in center of the page. Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Ab
         adipisci porro recusandae ducimus quasi laborum fuga eum accusamus facere reprehenderit excepturi tempora
         deleniti ratione non velit omnis, exercitationem error ad.</div>
 
@@ -38,9 +43,9 @@
 
     <h2>@Links</h2>
 
-    <a href="/">primary button</a>
+    <a class="link link-primary" href="/">Primary button</a>
 
-    <a href="/">Secondary button</a>
+    <a class="link link-secondary" href="/">Secondary button</a>
 
     <hr>
 
@@ -50,7 +55,7 @@
 
     <p>no bullets</p>
 
-    <ul>
+    <ul class="list-non-bullet">
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
@@ -58,35 +63,35 @@
 
 
     <h3>Unordered list inline</h3>
-    <ul>
-        <li>inline item 1</li>
-        <li>inline item 2</li>
-        <li>inline item 3</li>
+    <ul class="list-non-bullet ">
+        <li class="list-item-inline">inline item one</li>
+        <li class="list-item-inline">inline item two</li>
+        <li class="list-item-inline">inline item three</li>
     </ul>
 
     <h3>Unordered list </h3>
 
-    <ol>
-        <li>1.item</li>
-        <li>2.item</li>
-        <li>3.item</li>
+    <ol reversed>
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
     </ol>
 
     <hr>
 
     <h2>@Navigation</h2>
 
-    <nav>
-        <div>brand name</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand-name">brand name</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
             </li>
-            <li>
-                <a href="/">projects</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">projects</a>
             </li>
-            <li>
-                <a href="/">blog</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">blog</a>
             </li>
         </ul>
     </nav>
@@ -95,23 +100,23 @@
 
     <h2>@section</h2>
 
-    <section>
-        <div>
-            <h1>white section</h1>
+    <section class="section">
+        <div class="container container-center">
+            <h1>normal section</h1>
             <p>this has white background wiht full width extend. Lorem ipsum dolor sit amet consectetur, adipisicing
                 elit. Aspernatur quod voluptates eius! Ipsum, sunt asperiores ducimus, ad quam expedita deserunt impedit
                 nobis doloribus, quis rerum! Minus similique ex in illum.</p>
-            <a href="/">primary button</a>
+            <a class="link link-primary" href="/">primary button</a>
         </div>
     </section>
 
-    <section>
-        <div>
+    <section class="section off-white">
+        <div class="container container-center ">
             <h1>off white section</h1>
             <p>this has fixed width with background color not white. Lorem ipsum dolor sit, amet consectetur adipisicing
                 elit. Dignissimos fugiat doloremque quasi aperiam, aliquam esse culpa, nostrum, eius laborum in animi
                 quas id illo totam ipsum perferendis odit ea assumenda.</p>
-            <a href="/">primary button</a>
+            <a class="link link-primary" href="/">primary button</a>
         </div>
     </section>
 
@@ -119,10 +124,10 @@
 
     <h2>@Header</h2>
 
-    <header>
+    <header class="hero">
 
-        <img src="" alt="hero img">
-        <h1>this is karthiks portfolio</h1>
+        <img class="hero-img" src="/image/undraw_lost_online.svg" alt="hero img">
+        <h1 class="hero-heading">this is <span class="heading-name">karthik`s</span> portfolio</h1>
 
     </header>
 
@@ -130,21 +135,21 @@
 
     <h2>@footer</h2>
 
-    <footer>
-        <div>header inside footer</div>
-        <ul>
-            <li>
-                <a href="/">twitter</a>        
+    <footer class="footer">
+        <div class="footer-heading">header inside footer</div>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">twitter</a>
             </li>
-            <li>
-                <a href="/">Github</a>        
+            <li class="list-item-inline">
+                <a class="link" href="/">Github</a>
             </li>
-            <li>
-                <a href="/">linkedin</a>        
-            </li>            
+            <li class="list-item-inline">
+                <a class="link" href="/">linkedin</a>
+            </li>
         </ul>
     </footer>
-  
+
 
 </body>
 
