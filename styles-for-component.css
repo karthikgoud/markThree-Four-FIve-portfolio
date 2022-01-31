@@ -46,7 +46,9 @@ hr {
     color: var(--secondary-color);
 }
 
-.section .link 
+.section .link .secondary-text{
+    font-weight: bold;
+}
 
 /* list */
 
